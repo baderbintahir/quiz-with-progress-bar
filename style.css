@@ -1,0 +1,199 @@
+body{
+    margin: 0;
+    background: url("https://images.unsplash.com/photo-1540835296355-c04f7a063cbb?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80");
+    background-position: center;
+}
+
+.wrapper{
+    background: rgba(0, 0, 0, 0.7);
+    height: 100%;
+}
+
+.main{
+    padding: 0;
+    text-align: center;
+}
+
+.main .progress-container, .main .questions-container{
+    padding-top: 5%;
+}
+
+.main .questions-container{
+    color: white;
+}
+
+.answers, .q-statement{
+    font-size: 1.5em;
+}
+
+#q1-textfield, #month{
+    font-size: 1em;
+    width: 50px;
+    text-align: center;
+    border: 2px solid black;
+    background: transparent;
+    color: white;
+}
+
+/* Chrome, Safari, Edge, Opera */
+#q1-textfield::-webkit-outer-spin-button,
+#q1-textfield::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+#q1-textfield {
+  -moz-appearance: textfield;
+}
+
+.submit-btn button, .b {
+    background: transparent;
+    color: white;
+    font-size: 1em;
+    border: 1px solid white;
+    margin-top: 2%;
+    padding: 0.5% 2%;
+    border-radius: 5%;
+    cursor: pointer;
+    width: 30%;
+}
+
+#progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    color: lightgrey;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+}
+
+#progressbar .active {
+    color: #3ed852;
+}
+
+#progressbar li {
+    list-style-type: none;
+    font-size: 15px;
+    width: 20%;
+    float: left;
+    position: relative;
+    font-weight: 400;
+    text-align: center;
+}
+
+#progressbar #q-1:before {
+    /* font-family: FontAwesome; */
+    content: "\f13e";
+}
+
+#progressbar #q-2:before {
+    /* font-family: FontAwesome; */
+    content: "\f007";
+}
+
+#progressbar #q-3:before {
+    /* font-family: FontAwesome; */
+    content: "\f030";
+}
+
+#progressbar #q-4:before {
+    /* font-family: FontAwesome; */
+    content: "\f00c";
+}
+
+#progressbar #q-5:before {
+    /* font-family: FontAwesome; */
+    content: "\f00c";
+}
+
+#progressbar li:before {
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    display: block;
+    font-size: 20px;
+    color: #ffffff;
+    background: lightgray;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+    padding: 2px;
+    cursor: pointer;
+}
+
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: lightgray;
+    position: absolute;
+    left: 0;
+    top: 25px;
+    z-index: -1;
+}
+
+#progressbar li.active:before, #progressbar li.active:after {
+    background: #3ed852;
+}
+
+.progress {
+    height: 20px;
+}
+
+.progress-bar {
+    background-color: #3ed852;
+}
+
+.cb-box, .r-box{
+    text-align: start;
+    width: 20%;
+    margin: auto;
+}
+
+.b, #month{
+    width: auto;
+}
+
+.r-box{
+    width: 30%;
+}
+
+.q2-container, .q3-container, .q4-container, .q5-container, .q6-container, .result-container{
+    display: none;
+}
+
+.img{
+    width: 10%;
+}
+
+.result-container{
+    background: rgba(0, 0, 0, 0.8);
+    height: 40%;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+@media (min-width:801px)  {
+    .main{
+        padding: 5% 10%;
+    }
+
+    #progressbar{
+        width: 70%;
+    }
+
+    .submit-btn button{
+        width: 15%;
+    }
+
+    .cb-box, .r-box{
+        width: 10%;
+    }
+
+    .q-statement{
+        font-size: 2em;
+    }
+
+}
